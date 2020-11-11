@@ -2,6 +2,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <!--Import Google Icon Font-->
     <link
@@ -12,15 +27,87 @@
     <!-- Compiled and minified CSS -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
     />
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-    <title>E</title>
+    <link rel="stylesheet" href="index.css" />
+    <title>Portfolio</title>
   </head>
-  <body class="grey darken-3">
-    <p>This is a live website</p>
+  <body>
+    <!-- navbar -->
+    <!-- class="navbar-fixed" -->
+    <header>
+      <ul id="dropdown1" class="dropdown-content black">
+        <li><a href="#!" class="white-text">Demo's</a></li>
+        <li class="divider"></li>
+        <li><a href="#!" class="white-text">Gallery</a></li>
+        <li class="divider"></li>
+        <li><a href="#!" class="white-text">Three</a></li>
+      </ul>
+      <nav class="nav-wrapper transparent">
+        <div class="container">
+          <!-- <a href="#" class="brand-logo">Eli</a> -->
+          <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="hide-on-med-and-down">
+            <li><a href="#photos">ABOUT</a></li>
+            <li><a href="#services">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li>
+              <a class="dropdown-trigger" href="#!" data-target="dropdown1"
+                >PAGES<i class="material-icons right">arrow_drop_down</i></a
+              >
+            </li>
+          </ul>
+
+          <ul class="right hide-on-small-only">
+            <li>
+              <a
+                href="#"
+                class="tooltipped btn-floating btn-small transparent"
+                data-tooltip="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="tooltipped btn-floating btn-small transparent"
+                data-tooltip="Facebook"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="tooltipped btn-floating btn-small transparent"
+                data-tooltip="Twitter"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="sidenav grey lighten-2" id="mobile-menu">
+            <li><a href="#photos">ABOUT</a></li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container center-align title">
+        <h3 class="animate__animated animate__fadeInDown titleText">
+          Eli Preston
+        </h3>
+      </div>
+    </header>
+
+    <!--------------------------------------------->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
