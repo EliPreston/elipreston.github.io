@@ -34,3 +34,8 @@ header {
 .animate__animated.animate__fadeInDown {
   --animate-duration: 2.5s;
 }
+
+.sidenavText {
+  /* color: rgb(82, 21, 21); */
+  color: red;
+}
