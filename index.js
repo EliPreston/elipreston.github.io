@@ -26,5 +26,5 @@ $(window).scroll(function() { // when the page is scrolled run this
 });
 
 $('#top').click(function() { // when the button is clicked
-  $('body,html').animate({scrollTop:0},1000); // return to the top with a nice animation
+  $('body,html').animate({scrollTop:0},1000); // return to the top with animation
 });

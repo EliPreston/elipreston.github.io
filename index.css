@@ -1,9 +1,17 @@
-header {
+.front {
   background-image: url(img/SmileyGradientmap.png);
   background-size: cover;
   background-position: center;
-  min-height: 100%;
+  min-height: 100vh;
+  animation: fadeIn;
+  animation-duration: 2.5s;
 }
+
+/* .front {
+  animation: fadeIn;
+  animation-duration: 2.5s;
+} */
+
 .section {
   padding-top: 4vw;
   padding-bottom: 4vw;
@@ -38,4 +46,23 @@ header {
 .sidenavText {
   /* color: rgb(82, 21, 21); */
   color: red;
+}
+
+.scrollUp {
+  animation: fadeIn;
+  animation-duration: 4s;
+}
+
+.scrollUp:hover {
+  /* other browsers */
+  animation: pulse 2.5s infinite;
+
+  /* webkit browsers */
+  -webkit-animation: pulse 2.5s infinite;
+
+  /* firefox */
+  -moz-animation: pulse 2.5s infinite;
+
+  /* opera */
+  -o-animation: pulse 2.5s infinite;
 }
