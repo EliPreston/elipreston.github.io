@@ -1,3 +1,8 @@
+body {
+  animation: fadeIn;
+  animation-duration: 2.5s;
+}
+
 .front {
   background-image: url(img/SmileyGradientmap.png);
   background-size: cover;
@@ -6,11 +11,6 @@
   animation: fadeIn;
   animation-duration: 2.5s;
 }
-
-/* .front {
-  animation: fadeIn;
-  animation-duration: 2.5s;
-} */
 
 .section {
   padding-top: 4vw;
@@ -48,10 +48,13 @@
   color: red;
 }
 
-.scrollUp {
+/* This animation repeats whenever hovered over and then moved off */
+/* Not sure why, but instead just faded in whole body */
+/* .scrollUp { 
   animation: fadeIn;
+  animation-iteration-count: 1;
   animation-duration: 4s;
-}
+} */
 
 .scrollUp:hover {
   /* other browsers */
