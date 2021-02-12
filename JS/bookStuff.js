@@ -185,15 +185,17 @@ function createCardSuggestedBooks(data, key) {
                                 <span class="card-title"><h5>${data["book"]}</h5></span>
                                 <p>Synopsis: ${data["synposis"]}</p>
                                 <br>
-                                <p style="color:black">Post ID: ${key}</p>
                                 <br>
                             </div>
                         </div>
                     </div>
                 `;
+                // <p style="color:black">Post ID: ${key}</p>
+
 
     return card;
 }
+
 database.ref("/posts/").on("child_added", (snapshot) => {
     data = snapshot.val();
     key = snapshot.key;
