@@ -1,0 +1,60 @@
+body {
+  animation: fadeIn;
+  animation-duration: 2.5s;
+}
+
+.front {
+  background-image: url(/img/SmileyGradientmap.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  animation: fadeIn;
+  animation-duration: 2.5s;
+}
+
+.section {
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+}
+
+/* .tabs .indicator {
+      background-color: #1a237e;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus .active {
+      background: transparent;
+    } */
+
+@media screen and (max-width: 670px) {
+  header {
+    min-height: 770px;
+  }
+}
+
+.title {
+  padding-top: 20vw;
+  padding-bottom: 20vw;
+}
+
+.titleText {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+
+  color: rgb(133, 18, 18);
+  /* background-color: black; */
+}
+.animate__animated.animate__fadeInDown {
+  --animate-duration: 2.5s;
+}
+
+.sidenavText {
+  /* color: rgb(82, 21, 21); */
+  color: red;
+}
+
+/* This animation repeats whenever hovered over and then moved off */
+/* Not sure why, but instead just faded in whole body */
+/* .scrollUp { 
+    animation: fadeIn;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+  } */

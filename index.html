@@ -35,7 +35,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="CSS/footer.css" />
+    <link rel="stylesheet" href="CSS/home.css" />
     <title>Eli</title>
   </head>
   <body>
@@ -52,17 +53,16 @@
       <ul id="dropdown1" class="dropdown-content black">
         <li><a href="#" class="white-text">GALLERY</a></li>
         <li class="divider"></li>
-        <li><a href="#" class="white-text">BOOK LIST</a></li>
+        <li><a href="books.html" class="white-text">BOOK LIST</a></li>
         <li class="divider"></li>
-        <li><a href="#" class="white-text">PAGE 3</a></li>
       </ul>
       <ul id="dropdown2" class="dropdown-content white">
         <li><a href="#about" class="red-text text-darken-4">GALLERY</a></li>
-        <!-- <li class="divider"></li> -->
-        <li><a href="#services" class="red-text text-darken-4">PAGE 2</a></li>
-        <!-- <li class="divider"></li> -->
-        <li><a href="#contact" class="red-text text-darken-4">PAGE 3</a></li>
+        <li>
+          <a href="books.html" class="red-text text-darken-4">BOOK LIST</a>
+        </li>
       </ul>
+
       <nav class="nav-wrapper transparent">
         <div class="container">
           <!-- <a href="#" class="brand-logo">Eli</a> -->
@@ -120,7 +120,7 @@
             <li>
               <a
                 class="dropdown-trigger red-text text-darken-4"
-                href="#!"
+                href="#"
                 data-target="dropdown2"
                 >PAGES<i class="material-icons right red-text text-darken-4"
                   >arrow_drop_down</i
@@ -131,9 +131,11 @@
         </div>
       </nav>
       <div class="container center-align title">
-        <h3 class="animate__animated animate__fadeInDown titleText">
-          Eli Preston
-        </h3>
+        <div class="titleTextContainer">
+          <h2 class="animate__animated animate__fadeInDown titleText">
+            Eli Preston
+          </h2>
+        </div>
       </div>
     </header>
 
@@ -142,7 +144,7 @@
       <div class="row">
         <div class="col s12 l4">
           <img
-            src="img/portrait.jpg"
+            src="img/uccLogo.png"
             alt=""
             class="responsive-img materialboxed"
           />
@@ -150,7 +152,8 @@
         <div class="col s12 l6 offset-l1">
           <h2 class="indigo-text text-darken-4">About Me</h2>
           <p>
-            I am currently in my junior year of highschool in Toronto, Ontario.
+            I am currently in my junior year of highschool at Upper Canada
+            College in Toronto, Ontario.
           </p>
         </div>
       </div>
@@ -162,14 +165,14 @@
             class="responsive-img materialboxed"
           />
         </div>
-        <div class="col s12 l6 pull-l5 right-align offset-l1">
+        <div class="col s12 l6 pull-l5 left-align offset-l1">
           <h2 class="indigo-text text-darken-4">Interests</h2>
           <p>
             A few of my interests, in and outside of school, include
             programming, photography, reading, as well as film and theatre. I
-            also enjoy, and am currently working on, editing photos and video.
-            Skateboarding has also become something I regularily do in my free
-            time when I don't have school work.
+            also enjoy, and am trying to get better at, editing photos and
+            video. Skateboarding has also become something I regularily do in my
+            free time.
           </p>
         </div>
       </div>
@@ -178,14 +181,36 @@
     <!-- parallax -->
     <div class="parallax-container">
       <div class="parallax">
+        <img src="img/SmileyVan01.png" alt="" class="responsive-img" />
+      </div>
+    </div>
+
+    <!-- parallax -->
+    <div class="parallax-container">
+      <div class="parallax">
         <img src="img/marioclouds.gif" alt="" class="responsive-img" />
       </div>
+    </div>
+
+    <div id="footerDiv">
+      <ul id="ulF">
+        <li>&copy; 2020 Creator</li>
+        <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+        <li><a href="https://instagram.com/" target="_blank">Instagram</a></li>
+        <li>
+          <a href="mailto:eli.preston@ucc.c=on.ca" target="_blank">Email</a>
+        </li>
+        <li>
+          <a href="https://github.com/EliPreston" target="_blank">Github</a>
+        </li>
+        <li>&copy; 2020 Creator</li>
+      </ul>
     </div>
 
     <!--------------------------------------------->
     <!-- Compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <script src="index.js"></script>
+    <script src="JS/home.js"></script>
   </body>
 </html>

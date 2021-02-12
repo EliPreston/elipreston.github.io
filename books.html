@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicomatic/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <title>Eli</title>
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link rel="stylesheet" href="CSS/footer.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper black">
+        <a href="#" class="brand-logo center">Book Page</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li>
+            <a href="index.html" class="">Home</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Floating Action Button -->
+    <div class="fixed-action-btn scrollUp">
+      <a class="btn-floating btn-large black" id="top">
+        <i class="large material-icons">keyboard_arrow_up</i>
+      </a>
+    </div>
+
+    <section>
+      <div class="container">
+        <h3>My Top Books;</h3>
+        <h6>
+          This is just a few of my favourite books at the moment, subject to
+          change on a whim.
+        </h6>
+        <div class="row" id="bookDisplay"></div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h3>My Reading List;</h3>
+        <h6>Here are a few books I am currently looking to read.</h6>
+        <div class="row" id="listDisplay"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h3>Want to suggest a book?</h3>
+        <h6>
+          Take a look at the below list and if you don't see the book you'd like
+          to suggest there, feel free to fill out the form by clicking the
+          'Suggest a Book' button.
+        </h6>
+
+        <a
+          href="#bookSuggestion"
+          id="bookSuggestionBTN"
+          class="btn modal-trigger"
+          >Suggest a Book</a
+        >
+      </div>
+
+      <div id="bookSuggestion" class="modal">
+        <div class="modal-content">
+          <form id="suggestionForm" autocomplete="off">
+            <div class="input-field">
+              <input
+                type="text"
+                id="bookName"
+                autocomplete=""
+                maxlength="50"
+                required
+              />
+              <label for="bookName">Name of book...</label>
+            </div>
+            <div class="input-field">
+              <input
+                type="text"
+                id="userSynposis"
+                autocomplete=""
+                maxlength="350"
+              />
+              <label for="userSynposis"
+                >Provide a brief synposis if you would like...</label
+              >
+            </div>
+            <button class="btn grey darken-2 z-depth-0">SEND</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="container">
+        <h5>Currently Suggested Books;</h5>
+        <div class="row" id="suggestedDisplay"></div>
+      </div>
+    </section>
+
+    <div id="footerDiv">
+      <ul id="ulF">
+        <li>&copy; 2020 Creator</li>
+        <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+        <li><a href="https://instagram.com/" target="_blank">Instagram</a></li>
+        <li>
+          <a href="mailto:eli.preston@ucc.c=on.ca" target="_blank">Email</a>
+        </li>
+        <li>
+          <a href="https://github.com/EliPreston" target="_blank">Github</a>
+        </li>
+        <li>&copy; 2020 Creator</li>
+      </ul>
+    </div>
+
+    <!--------------------------------------------->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-storage.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-analytics.js"></script> -->
+
+    <script src="JS/bookStuff.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
