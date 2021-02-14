@@ -89,7 +89,7 @@ function createCardBooksRead(booksOBJ) {
                 <img alt="Image not found." style="height: 10vw; width: auto;" class="responsive-img cardpicMY" id = "${booksOBJ["img"]}" src="">
             </div>
             <div class="card-action">
-                <a href="#">${booksOBJ["booklink"]}</a>
+                <a href="${booksOBJ["booklink"]}" target="_blank">Book Link</a>
             </div>
         </div>
     </div>
@@ -140,7 +140,7 @@ const card = `
             <img alt="Image not found." style="height: 10vw; width: auto;" class="responsive-img cardpicLIST" id = "${booksOBJ["img"]}" src="">
         </div>
         <div class="card-action">
-            <a href="#">${booksOBJ["booklink"]}</a>
+            <a href="${booksOBJ["booklink"]}" target="_blank">Book Link</a>
     </div>
 </div>
 `;
